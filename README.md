@@ -28,6 +28,13 @@ Repository có 2 branch:
 
 ## Hướng dẫn thực hành
 
+### Bước 0: Thực hiện GitHub SSO
+
+1. Truy cập https://github.com/orgs/sun-asterisk-internal/sso
+2. Hoàn tất quà trình đăng nhập SSO để tài khoản GitHub của bạn được tham gia vào organization `sun-asterisk-internal`
+3. Gửi GitHub username của bạn cho `@nguyen.huu.kim` hoặc `@le.minh.hoang` để được thêm vào danh sách thành viên của repository `sun-asterisk-internal/agentic-coding-hands-on`.
+4. Chờ xác nhận xử lý hoàn tất rồi thực hiện bước tiếp theo
+
 ### Bước 1: Clone repository
 
 ```sh
@@ -49,7 +56,7 @@ yarn install
 
 1. Truy cập [MoMorph Web](https://momorph.ai/) và đăng nhập bằng tài khoản Figma (dùng email `*@sun-asterisk.com`).
 2. Điền link file Figma sau để tiếp tục: https://www.figma.com/design/9ypp4enmFmdK3YAFJLIu6C/SAA-2025---Internal-Live-Coding
-3. Vào **Settings → GitHub → Connect** để kết nối tài khoản GitHub của bạn với MoMorph.
+3. Vào **Settings → GitHub → Connect** để kết nối tài khoản GitHub của bạn với MoMorph và đặc biệt đảm bảo đã cấp quyền truy cập vào GitHub repository `sun-asterisk-internal/agentic-coding-hands-on` tại bước này.
 
 > **Lưu ý:** Repository này đã được connect sẵn với MoMorph và Figma project trên hệ thống. Bạn chỉ cần kết nối tài khoản GitHub cá nhân với MoMorph là có thể sử dụng.
 
