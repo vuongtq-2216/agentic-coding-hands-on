@@ -29,6 +29,15 @@
       "service": "agentic-coding-hands-on"
     }
   ],
+  "vars": {
+    "NEXT_PUBLIC_IS_LAUNCHED": "true",
+    "NEXT_PUBLIC_SAA_EVENT_DATE": "2026-12-26T18:30:00+07:00",
+    "NEXT_PUBLIC_SAA_EVENT_DATE_DISPLAY": "26/12/2026",
+    "NEXT_PUBLIC_SAA_EVENT_TIME": "18h30",
+    "NEXT_PUBLIC_SAA_EVENT_VENUE": "Âu Cơ Art Center",
+    "NEXT_PUBLIC_SUPABASE_URL": "https://mfwbeekkdhjhdjwqyimt.supabase.co",
+    "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY": "sb_publishable_eBKDSQ2hdaqcH0R_vn7igw_LtndGZ6M"
+  },
   "observability": {
     "enabled": true,
     "logs": {
