@@ -28,7 +28,9 @@ export async function GET(request: Request) {
     .limit(limit + 1);
 
   if (cursor) {
-    query = query.lt("created_at", cursor);
+    // Fix: URL decoding converts + to space, restore timezone offset
+    const decodedCursor = cursor.replace(" ", "+");
+    query = query.lt("created_at", decodedCursor);
   }
 
   const { data, error } = await query;
