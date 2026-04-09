@@ -7,7 +7,11 @@ import { createClient } from "@/libs/supabase/server";
 export async function loginWithGoogle() {
   const supabase = await createClient();
   const headersList = await headers();
-  const origin = headersList.get("origin") || "";
+
+  // Build origin from host header (works on both local and Cloudflare Workers)
+  const host = headersList.get("x-forwarded-host") || headersList.get("host") || "localhost:3000";
+  const protocol = host.includes("localhost") ? "http" : "https";
+  const origin = `${protocol}://${host}`;
 
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider: "google",
